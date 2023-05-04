@@ -1,0 +1,86 @@
+main {
+  margin: 2.5rem 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 100%, rgb(236, 236, 236) 100%, rgb(214, 214, 214) 100%), url(https://www.nantech.az/img/sign.svg);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 33%;
+  margin: 0 auto;
+}
+.card h1 {
+  margin: 3rem 0;
+  color: red;
+  font-weight: 400;
+  font-size: 40px;
+  transition: 0.3s;
+}
+.card h1 span {
+  color: #1da1f2;
+}
+.card p {
+  transition: 0.3s;
+  padding: 2rem 0;
+}
+.card:hover h1, .card:hover p {
+  transform: scale(1.02);
+}
+
+.login-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0px 2px 11px #e7e7e7;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.login-card h3 {
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+.login-card input, .login-card button {
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 8px;
+}
+.login-card input {
+  border: 1px solid #cecccc;
+  outline: none;
+  transition: 0.5s;
+}
+.login-card input:focus {
+  border: 1px solid #ed2a26;
+}
+.login-card button {
+  background-color: #ed2a26;
+  border: none;
+  transition: 0.2s;
+  color: #fff;
+  cursor: pointer;
+  width: 70%;
+  margin: 0 auto;
+}
+.login-card button:hover {
+  background-color: #c40400;
+}
+.login-card:hover {
+  box-shadow: 0px 4px 14px #d1d1d1;
+}
+.login-card .inp-item {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+.login-card .fa-regular {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

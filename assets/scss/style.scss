@@ -1,0 +1,86 @@
+main {
+    margin: 2.5rem 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 100%, rgb(236, 236, 236) 100%, rgb(214, 214, 214) 100%), url(../img/sign.svg);
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+    margin: 0 auto;
+    h1 {
+        margin: 3rem 0;
+        color: red;
+        font-weight: 400;
+        font-size: 40px;
+        transition: .3s;
+        span {
+            color: #1da1f2;
+        }
+    }
+    p {
+        transition: .3s;
+        padding: 2rem 0;
+    }
+    &:hover {
+        h1 , p {
+            transform: scale(1.02);
+        }
+    }
+}
+.login-card  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    border-radius: 8px;
+    transition: .3s;
+    box-shadow: -3px -3px 11px #e7e7e7;
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    h3 {
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: .5rem;
+    }
+    input, button {
+        padding: .6rem;
+        width: 100%;
+        border-radius: 8px;
+    }
+    input {
+        border: 1px solid #cecccc;
+        outline: none;
+        transition: .5s;
+        &:focus {
+            border: 1px solid #ed2a26;
+        }
+    }
+    button {
+        background-color: #ed2a26;
+        border: none;
+        transition: .2s;
+        color: #fff;
+        cursor: pointer;
+        width: 70%;
+        margin: 0 auto;
+        &:hover {
+            background-color: #c40400;
+        }
+    }
+    &:hover {
+        box-shadow: -4px -4px 14px #d1d1d1;
+    }
+    .inp-item {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .fa-regular {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
